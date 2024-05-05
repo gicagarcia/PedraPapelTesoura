@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PedraPapelTesoura</string>
+    <string name="two_players">1 vs. Bot</string>
+    <string name="three_players">1 vs. 2 bots</string>
+    <string name="play">"Confirm play"</string>
+    <string name="firstPlayer">Player 1</string>
+    <string name="secondPlayer">Player 2</string>
+    <string name="thirdPlayer">Player 3</string>
+    <string name="you">Your play</string>
+</resources>

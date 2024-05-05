@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gameForThree"
+    android:background="#FFF8DC"
+    >
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="@string/firstPlayer"
+        android:textSize="30sp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/handOpponent1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player1"
+        >
+        <ImageView
+            android:id="@+id/pedraOpponent1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:src="@drawable/pedra"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/papelOpponent1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pedra"
+            android:src="@drawable/papel"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/tesouraOpponent1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/tesoura"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/papel" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="260dp"
+        android:text="@string/secondPlayer"
+        android:textSize="30sp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/handOpponent2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player2"
+        >
+        <ImageView
+            android:id="@+id/pedraOpponent2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:src="@drawable/pedra"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/papelOpponent2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pedra"
+            android:src="@drawable/papel"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/tesouraOpponent2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/tesoura"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/papel" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/play3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="220dp"
+        android:text="@string/you"
+        android:textSize="30sp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/imagesLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/play3"
+
+        >
+
+        <ImageView
+            android:id="@+id/pedra"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:src="@drawable/pedra"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/papel"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pedra"
+            android:src="@drawable/papel"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/tesoura"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/tesoura"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/papel" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp"
+        android:text="@string/play"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
