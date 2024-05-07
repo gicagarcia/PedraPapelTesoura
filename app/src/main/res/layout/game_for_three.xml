@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/gameForThree"
     android:background="#FFF8DC"
-    tools:context=".ui.PlayThree">
+    tools:context=".ui.PlayThreeActivity">
     >
 
     <TextView
@@ -183,6 +183,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnChoose"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
