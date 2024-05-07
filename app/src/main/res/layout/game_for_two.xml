@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/gameForTwo"
     android:background="#FFF8DC"
-    tools:context=".ui.PlayTwo">
+    tools:context=".ui.PlayTwoActivity">
     >
 
     <TextView
@@ -126,6 +126,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnChoose"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
