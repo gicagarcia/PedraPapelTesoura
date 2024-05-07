@@ -21,6 +21,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.PlayTwoActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="OPEN_P2_ACTIVITY"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.PlayThreeActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="OPEN_P3_ACTIVITY"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
