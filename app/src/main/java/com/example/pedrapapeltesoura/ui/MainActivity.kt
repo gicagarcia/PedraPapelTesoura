@@ -3,7 +3,6 @@ package com.example.pedrapapeltesoura.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.pedrapapeltesoura.R
 import com.example.pedrapapeltesoura.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -25,12 +24,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun play1v1(){
-        val intent = Intent(this@MainActivity, PlayTwo::class.java)
+        val intent = Intent(this@MainActivity, PlayTwoActivity::class.java)
         startActivity(intent)
     }
 
     private fun play1v2(){
-        val intent = Intent(this@MainActivity, PlayThree::class.java)
+        val intent = Intent(this@MainActivity, PlayThreeActivity::class.java)
         startActivity(intent)
     }
 }
