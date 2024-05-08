@@ -33,8 +33,15 @@ class PlayTwoActivity : AppCompatActivity(){
         when {
             play == bot -> message = "EMPATE - O bot escolheu $bot"
             play == Plays.PEDRA && bot == Plays.TESOURA ||
+                    play == Plays.PEDRA && bot == Plays.LAGARTO ||
                     play == Plays.PAPEL && bot == Plays.PEDRA ||
-                    play == Plays.TESOURA && bot == Plays.PAPEL -> message = "VITÓRIA - O bot escolheu $bot"
+                    play == Plays.PAPEL && bot == Plays.SPOCK ||
+                    play == Plays.TESOURA && bot == Plays.PAPEL ||
+                    play == Plays.TESOURA && bot == Plays.LAGARTO ||
+                    play == Plays.LAGARTO && bot == Plays.PAPEL ||
+                    play == Plays.LAGARTO && bot == Plays.SPOCK ||
+                    play == Plays.SPOCK && bot == Plays.PEDRA ||
+                    play == Plays.SPOCK && bot == Plays.TESOURA -> message = "VITÓRIA - O bot escolheu $bot"
             else -> message = "DERROTA - O bot escolheu $bot"
         }
         Toast.makeText(this, message, Toast.LENGTH_LONG).show()
@@ -51,6 +58,12 @@ class PlayTwoActivity : AppCompatActivity(){
 
         p2b.papel.setOnClickListener{
             play = Plays.PAPEL
+        }
+        p2b.lizard.setOnClickListener{
+            play = Plays.LAGARTO
+        }
+        p2b.spock.setOnClickListener{
+            play = Plays.SPOCK
         }
     }
 }
