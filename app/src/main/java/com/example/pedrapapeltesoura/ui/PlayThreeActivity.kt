@@ -39,8 +39,15 @@ class PlayThreeActivity : AppCompatActivity() {
             when {
                 play == bot -> draws++
                 play == Plays.PEDRA && bot == Plays.TESOURA ||
+                        play == Plays.PEDRA && bot == Plays.LAGARTO ||
                         play == Plays.PAPEL && bot == Plays.PEDRA ||
-                        play == Plays.TESOURA && bot == Plays.PAPEL -> userWins++
+                        play == Plays.PAPEL && bot == Plays.SPOCK ||
+                        play == Plays.TESOURA && bot == Plays.PAPEL ||
+                        play == Plays.TESOURA && bot == Plays.LAGARTO ||
+                        play == Plays.LAGARTO && bot == Plays.PAPEL ||
+                        play == Plays.LAGARTO && bot == Plays.SPOCK ||
+                        play == Plays.SPOCK && bot == Plays.PEDRA ||
+                        play == Plays.SPOCK && bot == Plays.TESOURA -> userWins++
                 else -> botWins++
             }
         }
@@ -66,6 +73,12 @@ class PlayThreeActivity : AppCompatActivity() {
 
         p3b.papel.setOnClickListener{
             play = Plays.PAPEL
+        }
+        p3b.lizard.setOnClickListener{
+            play = Plays.LAGARTO
+        }
+        p3b.spock.setOnClickListener{
+            play = Plays.SPOCK
         }
     }
 
