@@ -25,7 +25,7 @@
 
     <LinearLayout
         android:id="@+id/handOpponent1"
-        android:layout_width="350dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
@@ -36,7 +36,7 @@
         >
         <ImageView
             android:id="@+id/pedraOpponent1"
-            android:layout_width="100dp"
+            android:layout_width="60dp"
             android:layout_height="80dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,23 +46,43 @@
 
         <ImageView
             android:id="@+id/papelOpponent1"
-            android:layout_width="100dp"
+            android:layout_width="60dp"
             android:layout_height="80dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/pedra"
+            app:layout_constraintTop_toBottomOf="@id/pedraOpponent1"
             android:src="@drawable/papel"
             android:layout_margin="8dp"/>
 
         <ImageView
             android:id="@+id/tesouraOpponent1"
-            android:layout_width="100dp"
+            android:layout_width="60dp"
             android:layout_height="80dp"
             android:layout_margin="8dp"
             android:src="@drawable/tesoura"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/papel" />
+            app:layout_constraintTop_toBottomOf="@id/papelOpponent1" />
+
+        <ImageView
+            android:id="@+id/lizardOpponent1"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/lagarto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tesouraOpponent1" />
+
+        <ImageView
+            android:id="@+id/spockOpponent1"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/spock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lizardOpponent1" />
 
     </LinearLayout>
 
@@ -82,7 +102,7 @@
 
     <LinearLayout
         android:id="@+id/imagesLayout"
-        android:layout_width="350dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
@@ -95,7 +115,7 @@
 
         <ImageView
             android:id="@+id/pedra"
-            android:layout_width="100dp"
+            android:layout_width="60dp"
             android:layout_height="80dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +125,7 @@
 
         <ImageView
             android:id="@+id/papel"
-            android:layout_width="100dp"
+            android:layout_width="60dp"
             android:layout_height="80dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -115,13 +135,33 @@
 
         <ImageView
             android:id="@+id/tesoura"
-            android:layout_width="100dp"
+            android:layout_width="60dp"
             android:layout_height="80dp"
             android:layout_margin="8dp"
             android:src="@drawable/tesoura"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/papel" />
+
+        <ImageView
+            android:id="@+id/lizard"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/lagarto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tesoura" />
+
+        <ImageView
+            android:id="@+id/spock"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/spock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lizard" />
 
     </LinearLayout>
 
